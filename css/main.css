@@ -25,16 +25,14 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
   }
 
   .hero-overlay{
-    /* display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
     height: 100vh;
     width: 100vw;
     background-color: rgba(160,232,130, .1);
+    position: relative;
   }
 
   .logo-div{
@@ -78,6 +76,7 @@ html {
     letter-spacing: .1em;
     font-weight: bold;
     color: #095617;
+    text-transform: uppercase;
     animation: slide-right 1.3s ease-in-out;
   }
 
@@ -103,63 +102,175 @@ html {
   }
 
 
-  .nav-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-    height: 90px;
-    background-color: rgba(62, 60, 62, .1);
-    align-self: flex-end;
-    animation: slide-right 1.4s ease-in-out;
-  }
-
-  .nav-div nav{
-    height: 80px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .nav-div nav ul{
-    height: 100px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-  }
-
-  .nav-li{
-    background-color: rgba(31, 30, 31, .6);
-    height: 40px;
-    width: 100px;
-    margin: 0 1em 0 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-  }
-
-  .nav-a{
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration: none;
-    letter-spacing: .1em;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-
-  }
 
  
+  /* ABOUT STYLES */
+
+  .about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+  }
+
+  .about-h1{
+    font-family: 'Expletus Sans', cursive;
+    text-align: center;
+    margin: 2em 0 1.2em 0;
+    font-size: 2em;
+    color: #095617;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .about-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(48,59,72,.9);
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
+  }
+
+  .about-p{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .1em;
+    font-weight: bold;
+    color: white;
+  }
+
+
+  /* SECTION DIVIDER STYLES */
+
+
+  .section-divider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../img/divider.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+  }
+
+  .section-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(160,232,130, .1);
+  }
+
+  .overlay-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(17,55,1, .8);
+    box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
+    width: 350px;
+    height: 50px;
+  }
+
+  .divider-h2{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+  }
+
+
+  /* FLOWER SECTION STYLES */
+
+
+  .flower-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220vh;
+    width: 100%;
+  }
+
+  .flower-p{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .1em;
+    width: 80%;
+    margin: auto;
+  }
+
+
+  .flower-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1500px;
+    width: 90%;
+    margin: auto;
+    
+  }
+
+
+  .flower-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
+  }
+
+  .div-1{
+    background-image: url('../img/african.jpg');
+    background-size: cover;
+  }
+
+  .div-2{
+    background-image: url('../img/alstro.jpg');
+    background-size: cover;
+  }
+
+  .div-3{
+    background-image: url('../img/azalea.jpg');
+    background-size: cover;
+  }
+
+  .div-4{
+    background-image: url('../img/bluebell.jpg');
+    background-size: cover;
+  }
+
+  .flower-h3{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    width: 60%;
+    margin: auto;
+    background-color:rgba(17,55,1, .7);
+    box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
+  }
 
 
 
@@ -226,3 +337,95 @@ html {
   }
 }
 
+/* ------------------------------------------------ */
+
+.custom-shape-divider-bottom-1601371525 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1601371525 svg {
+  position: relative;
+  display: block;
+  width: calc(184% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-bottom-1601371525 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1601371525 svg {
+      width: calc(300% + 1.3px);
+      height: 140px;
+  }
+}
+
+/* ------------------------------------------------ */
+
+
+.custom-shape-divider-top-1601372494 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1601372494 svg {
+  position: relative;
+  display: block;
+  width: calc(184% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-top-1601372494 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1601372494 svg {
+      width: calc(186% + 1.3px);
+      height: 88px;
+  }
+}
+
+/* ------------------------------------------------ */
+
+.custom-shape-divider-bottom-1601373666 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1601373666 svg {
+  position: relative;
+  display: block;
+  width: calc(184% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-bottom-1601373666 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1601373666 svg {
+      width: calc(300% + 1.3px);
+      height: 88px;
+  }
+}
