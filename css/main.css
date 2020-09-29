@@ -49,6 +49,8 @@ html {
       opacity: .8;
   }
 
+  
+
 
   .logo-h2{
     font-family: 'Expletus Sans', cursive;
@@ -67,6 +69,7 @@ html {
     height: 400px;
     width: 80%;
     margin: auto;
+    z-index: 3
   }
 
   .hero-h1{
@@ -78,6 +81,7 @@ html {
     color: #095617;
     text-transform: uppercase;
     animation: slide-right 1.3s ease-in-out;
+    z-index: 3
   }
 
   .hero-p{
@@ -88,6 +92,7 @@ html {
     font-weight: bold;
     color: black;
     animation: slide-right 1.6s ease-in-out;
+    z-index: 3
   }
 
   .hero-p2{
@@ -99,6 +104,7 @@ html {
     color: black;
     align-self: auto;
     animation: slide-right 1.8s ease-in-out;
+    z-index: 3
   }
 
 
@@ -203,7 +209,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 220vh;
+    height: 230vh;
     width: 100%;
   }
 
@@ -233,7 +239,6 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: green;
     width: 90%;
     height: 300px;
     margin: auto;
@@ -271,6 +276,143 @@ html {
     background-color:rgba(17,55,1, .7);
     box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
   }
+
+
+
+  /* TREE SECTION STYLES */
+  .flower-divider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../img/divider2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+  }
+
+  .flower-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(160,232,130, .1);
+  }
+
+  .tree-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240vh;
+    width: 100%;
+  }
+
+
+  .tree-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1500px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .tree-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
+  }
+
+  .div-5{
+    background-image: url('../img/banyana.jpg');
+    background-size: cover;
+  }
+  .div-6{
+    background-image: url('../img/euca.jpeg');
+    background-size: cover;
+  }
+  .div-7{
+    background-image: url('../img/maga.jpg');
+    background-size: cover;
+  }
+  .div-8{
+    background-image: url('../img/maple.jpg');
+    background-size: cover;
+  }
+
+
+  /* FOOTER STYLES */
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C2E00;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .footer-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(160,232,130, .3);
+  }
+
+  .footer-h2{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    width: 60%;
+    margin: auto;
+  }
+  
+  address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color:rgba(17,55,1, .7);
+    box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
+  }
+
+  address p{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: auto;
+    width: 40%;
+  }
+
+
+
+
+
 
 
 
@@ -425,6 +567,36 @@ html {
 /** For mobile devices **/
 @media (max-width: 767px) {
   .custom-shape-divider-bottom-1601373666 svg {
+      width: calc(300% + 1.3px);
+      height: 88px;
+  }
+}
+
+/* ------------------------------------------------ */
+
+.custom-shape-divider-top-1601379037 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1601379037 svg {
+  position: relative;
+  display: block;
+  width: calc(184% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-top-1601379037 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1601379037 svg {
       width: calc(300% + 1.3px);
       height: 88px;
   }
