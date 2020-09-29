@@ -28,6 +28,12 @@ html {
       position: relative;
   }
 
+  .birds{
+    width: 40%;
+    position: relative;
+    opacity: .8;
+  }
+
   .hero-overlay{
     height: 100vh;
     width: 100vw;
@@ -50,7 +56,6 @@ html {
   }
 
   
-
 
   .logo-h2{
     font-family: 'Expletus Sans', cursive;
@@ -399,6 +404,11 @@ html {
     box-shadow: 5px 5px 5px 0px rgba(	33, 44, 60, .75);
   }
 
+  .hangtree{
+    width: 30%;
+    position: relative;
+  }
+
   address p{
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
@@ -411,12 +421,77 @@ html {
 
 
 
+/* --------------------------------------------- MEDIA QUERIES ------------------------------------------------- */
+
+
+  @media (min-width: 992px) { 
+    .hero-text{
+      
+      width: 30%;
+      margin-left: auto;
+    }
+
+    .birds{
+      width: 50%;
+      position: relative;
+      opacity: .7;
+    }
+
+    .about-div{
+      width: 50%;
+      height: 600px;
+    }
+
+    .flower-wrapper, .tree-wrapper{
+      height: 150vh;
+    }
+
+    .flower-contain, .tree-contain{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .flower-div, .tree-div{
+      height: 350px;
+      width: 40%;
+      transition: .8s transform ease-in-out;
+    }
+
+    .flower-div:hover, .tree-div:hover{
+      transform: scale(1.1);
+      
+    }
+
+
+    address{
+      width: 50%;
+      
+    }
+
+    .footer-contain{
+      height: 80vh;
+    } 
+
+    footer{
+      height: 80vh;
+      justify-content: center;
+    }
+
+    .footer-h2{
+      margin-bottom: 0;
+    }
+
+   }
+
+   
 
 
 
 
 
-  /* KEYFRAMES ANIMATIONS */
+
+  /* --------------------------------------------- KEYFRAMES ANIMATIONS ------------------------------------------------- */
+
 
   .focus-in-expand {
     -webkit-animation: focus-in-expand 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -601,3 +676,6 @@ html {
       height: 88px;
   }
 }
+
+
+
